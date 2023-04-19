@@ -1,0 +1,120 @@
+.secao__lineup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 24px;
+}
+
+.line-up {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    color: white;
+    margin: 50px 0px;
+}
+
+.div__data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde);
+    padding: 14px;
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    position: relative;
+}
+
+.bandas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-family: var(--fonte-geral);
+    color: white;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.bandas div {
+    margin-bottom: 0.5rem;
+}
+
+.bandas h3 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.bandas h4 {
+    font-size: 40px;
+    font-weight: 700;    
+}
+
+.bandas h5 {
+    font-size: 32px;
+    font-weight: 700;    
+}
+
+.bandas h6 {
+    font-size: 32px;
+    font-weight: 500;  
+}
+
+@media screen and (min-width: 765px) {
+
+    .line-up {
+        font-size: 60px;
+    }
+
+    .bandas div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .div__data {
+        font-size: 48px;
+        padding: 16px;
+    }
+
+    .div__data::before, .div__data::after {
+        content: "";
+        position: absolute;
+        width: 10vw;
+        height: 1px;
+        background: var(--verde);
+        left: -15vw;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+      
+    .div__data:after {
+        left: unset;
+        right: -15vw;
+    }
+}
+
+@media screen and (min-width: 1430px) {
+
+    .div__data::before, .div__data::after {
+        content: "";
+        position: absolute;
+        width: 25vw;
+        height: 1px;
+        background: var(--verde);
+        left: -30vw;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+      
+    .div__data:after {
+        left: unset;
+        right: -30vw;
+    }
+    
+}

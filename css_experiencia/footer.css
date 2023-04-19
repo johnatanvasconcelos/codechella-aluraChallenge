@@ -1,0 +1,89 @@
+.imagem__background {
+    background: url(/Mobile/Imagens/1\ -\ Homepage2.png) #FFFFFF, no-repeat;
+    mix-blend-mode: multiply;
+    background-size: cover;
+    height: 338px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    padding: 24px;
+    font-family: var(--fonte-geral);
+    font-size: 20px;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.logo__rodape {
+    width: 234px;
+    margin-bottom: 1rem;
+}
+
+.redes__sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.icones {
+    display: flex;
+    gap: 10px;
+    margin-bottom: .85rem;
+}
+
+.icones img {
+    width: 30px;
+}
+
+@media screen and (min-width: 765px) {
+
+    .imagem__background {
+        background: url(/Tablet/Imagens/1\ -\ Homepage2.png) no-repeat;
+        background-size: cover;
+    }
+
+    .rodape {
+        gap: 20px;
+    }
+
+    .redes__sociais {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1430px) {
+
+    .imagem__background {
+        background: url(/Desktop/Imagens/1\ -\ Imagem\ -\ homepage2.png) no-repeat;
+        background-size: cover;
+    }
+
+    .rodape {
+        flex-direction: row;
+        padding: 40px;
+        justify-content: space-around;
+    }
+
+    .copyright {
+        width: 400px;
+        text-align: start;
+        line-height: 2.2;
+    }
+
+    .logo__rodape {
+        width: 307px;
+        margin-bottom: 1rem;
+    }
+
+    .mix__rodape__desktop {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

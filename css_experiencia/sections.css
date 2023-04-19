@@ -1,0 +1,93 @@
+.section {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 1rem;
+    margin: .8rem 0;
+}
+
+section h2 {
+    font-family: var(--fonte-geral);
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+section p {
+    font-family: var(--fonte-geral);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+.image {
+    width: 312px;
+    height: 381px;
+}
+
+.img__first__section {
+    background: url(/Mobile/Imagens/2\ -\ A\ experiência1.png) no-repeat center;
+    background-size: cover;
+}
+
+.img__second__section {
+    background: url(/Mobile/Imagens/2\ -\ A\ experiência2.png) no-repeat center;
+    background-size: cover;
+}
+
+.img__third__section {
+    background: url(/Mobile/Imagens/2\ -\ A\ experiência3.png) no-repeat center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 765px) {
+
+    .image {
+        width: 609px;
+        height: 381px;
+    }
+
+    .img__first__section {
+        background: url(/Tablet/Imagens/2\ -\ A\ Experiência1.png) no-repeat center;
+        background-size: cover;
+    }
+    
+    .img__second__section {
+        background: url(/Tablet/Imagens/2\ -\ A\ Experiência2.png) no-repeat center;
+        background-size: cover;
+    }
+    
+    .img__third__section {
+        background: url(/Tablet/Imagens/2\ -\ A\ Experiência3.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .text {
+        width: 609px;
+    }
+}
+
+@media screen and (min-width: 1430px) {
+
+    .section {
+        display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 2rem;
+        padding: 20px 100px;
+    }
+
+    .text {
+        text-align: start;
+    }
+
+    .second__section .text {
+        grid-area: 1 / 1 / 2 / 1;
+        text-align: end;
+}
+}
