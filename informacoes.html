@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css_informacoes/reset.css">
+    <link rel="stylesheet" href="/css_informacoes/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Informações Gerais</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="/Desktop/Logo/Logo branco.svg" class="logo-cabecalho" alt="Logo com o nome do festival"></a>
+        <a href="index.html"></a><img src="/Mobile/Ícones/svgs/menu.svg" class="menu-cabecalho" alt=""></a>
+        <div class="nav__tablet">
+            <a href="experiencia.html">A experiência</a>
+            <a href="setores.html">Mapa de setores</a>
+            <a href="">Informações</a>
+            <a href="">Ingresso</a>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Informações Gerais</h1>
+    </section>
+    <main class="conteudo">
+        <h1>Perguntas Frequentes:</h1>
+        <div class="faq-menu">
+            <ul>
+                <li>
+                    <div class="question">Quais serão as atrações? <i class="fas fa-chevron-down"></i></div>
+				    <div class="answer">Teremos dois dias de shows, o primeiro
+                    (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. Confira o line-up em detalhes clicando <a href="/index.html">neste link!</a></div>
+                   
+                </li>
+                <li>
+                    <div class="question">Qual é a classificação etária? <i class="fas fa-chevron-down"></i></div> 
+                    <div class="answer">No evento será permitida a entrada de maiores de 16 anos. Menores só acompanhados dos
+                    responsáveis</div>
+                </li>
+                <li>    
+                    <div class="question">Quais são os setores disponíveis? <i class="fas fa-chevron-down"></i></div> 
+                    <div class="answer">Temos quatro setores disponíveis: Pista Premium, Pista Comum, Cadeiras térreo, cadeiras superiores
+                        e rampas. Confira mais detalhes <a href="/setores.html">clicando aqui.</a> 
+                    </div>
+                </li>
+                <li>
+                    <div class="question">Quais são os itens proibidos? <i class="fas fa-chevron-down"></i></div> 
+                    <div class="answer">Não serão permitidos: Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, 
+                    capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e
+                    cinturões, fogos de artifício, objetos de vidro, câmeras fotográficas ou filmadoras profissionais ou com lente destacável,
+                    cartazes feitos com papelão grosso e/ou fixados a madeiras, canudos rígidos, animais (exceto cães de assistência, identificados
+                    e acompanhados de pessoa com deficiência), bastão para tirar foto, guarda-chuva, substâncias inflamáveis, corrosivas e ou tóxicas,
+                    revistas, jornais e livros.</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="mix__rodape__desktop">
+            <img class="logo__rodape" src="/Desktop/Logo/Logo branco.svg" alt="">
+            <div class="redes__sociais">
+                <p>Acesse nossas redes:</p>
+                <div class="icones">
+                    <a href=""><img src="/Desktop/Ícones/svgs/Ícones whatsapp.svg" alt=""></a>
+                    <a href=""><img src="/Desktop/Ícones/svgs/Ícones Twitch.svg" alt=""></a>
+                    <a href=""><img src="/Desktop/Ícones/svgs/Ícones Instagram.svg" alt=""></a>
+                    <a href=""><img src="/Desktop/Ícones/svgs/Ícones Twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p>Desenvolvido por Johnatan Vasconcelos. Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer> 
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.classList.toggle('active');
+            });
+        });
+    </script>   
+</body>
+</html>

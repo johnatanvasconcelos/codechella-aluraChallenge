@@ -1,0 +1,24 @@
+@import url(/css_informacoes/header.css);
+@import url(/css_informacoes/banner.css);
+@import url(/css_informacoes/footer.css);
+@import url(/css_informacoes/sections.css);
+@import url(/css_informacoes/faq.css);
+
+:root {
+    /* cores */
+    --azul: #4650BD;
+    --verde: #008364;
+    --azul-escuro: #304968;
+    --verde-agua: #36C1A0;
+    --lilas: #B6BCFF;
+    --gradiente: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+
+    /* fontes */
+    --fonte-titulo: 'Calistoga', cursive;
+    --fonte-geral: 'Raleway', sans-serif;
+}
+
+body {
+    background: var(--gradiente);
+    background-size: cover;
+}   
