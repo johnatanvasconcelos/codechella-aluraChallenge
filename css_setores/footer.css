@@ -8,6 +8,7 @@
 .rodape {
     display: flex;
     flex-direction: column;
+    background-color: var(--azul);
     text-align: center;
     align-items: center;
     line-height: 1.5;

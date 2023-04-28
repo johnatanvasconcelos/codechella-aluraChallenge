@@ -115,7 +115,7 @@
     line-height: 40px;
 }
 
-.botao__ingressos {
+.botao {
     background-color: var(--azul);
     border: none;
     border-radius: 16px;
